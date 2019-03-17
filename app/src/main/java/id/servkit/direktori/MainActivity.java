@@ -19,27 +19,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
-
-//    public void toHutangDhLihatUbah(View view) {
-//        final AlertDialog dialogBuilder = new AlertDialog.Builder(this).create();
-//        LayoutInflater inflater = this.getLayoutInflater();
-//        View dialogView = inflater.inflate(R.layout.dialog_tambahan_ubah, null);
-//
-//        Button button1 = dialogView.findViewById(R.id.buttonSubmit);
-//        Button button2 = dialogView.findViewById(R.id.buttonCancel);
-//
-//        button2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                dialogBuilder.dismiss();
-//            }
-//        });
-//        button1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                // DO SOMETHINGS
-//                dialogBuilder.dismiss();
-//            }
-//        });
-
 }

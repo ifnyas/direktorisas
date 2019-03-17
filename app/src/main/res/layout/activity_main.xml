@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#212121"
     android:clickable="true"
     android:focusable="true"
@@ -14,7 +15,7 @@
         android:id="@+id/top1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_margin="16dp"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -64,16 +65,12 @@
             android:tint="@color/colorLight" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/top2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/top1">
-
         <HorizontalScrollView
+            android:id="@+id/top2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/top1">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -170,11 +167,11 @@
                     android:tint="#00BCD4" />
             </LinearLayout>
         </HorizontalScrollView>
-    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="16dp"
@@ -459,4 +456,4 @@
         </LinearLayout>
     </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

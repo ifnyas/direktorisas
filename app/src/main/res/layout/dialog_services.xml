@@ -1,6 +1,186 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MapsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTint="@color/colorLight"
+            android:gravity="center"
+            android:text="Pilih Jasa"
+            android:textColor="@color/colorLight" />
+
+        <ImageButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:contentDescription="Cancel Button"
+            android:onClick="toMapsActivity"
+            android:padding="16dp"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:tint="@color/colorLight" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <TableRow android:layout_marginBottom="16dp">
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_aksesoris"
+                android:drawablePadding="8dp"
+                android:drawableTint="#f44336"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Aksesoris"
+                android:textColor="#f44336" />
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_cuci_dan_salon_mobil"
+                android:drawablePadding="8dp"
+                android:drawableTint="#9C27B0"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Cuci dan Salon Mobil"
+                android:textColor="#9C27B0" />
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_derek"
+                android:drawablePadding="8dp"
+                android:drawableTint="#3F51B5"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Derek"
+                android:textColor="#3F51B5" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="16dp">
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_kaki_mobil"
+                android:drawablePadding="8dp"
+                android:drawableTint="#03A9F4"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Kaki Mobil"
+                android:textColor="#03A9F4" />
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_mesin"
+                android:drawablePadding="8dp"
+                android:drawableTint="#009688"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Mesin"
+                android:textColor="#009688" />
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_pom_bensin"
+                android:drawablePadding="8dp"
+                android:drawableTint="#8BC34A"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Pom Bensin"
+                android:textColor="#8BC34A" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="16dp">
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_rental"
+                android:drawablePadding="8dp"
+                android:drawableTint="#FFEB3B"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Rental"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_spare"
+                android:drawablePadding="8dp"
+                android:drawableTint="#FF9800"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Spare"
+                android:textColor="#FF9800" />
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_tambal_ban"
+                android:drawablePadding="8dp"
+                android:drawableTint="#00BCD4"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="toMapsActivity"
+                android:padding="16dp"
+                android:text="Tambal Ban"
+                android:textColor="#00BCD4" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

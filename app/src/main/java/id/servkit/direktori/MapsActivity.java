@@ -2,8 +2,11 @@ package id.servkit.direktori;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 
 public class MapsActivity extends AppCompatActivity {
 
@@ -20,11 +23,23 @@ public class MapsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void toShowTop3(View view) {
-
+    public void toMapsActivity(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 
-    public void toHideTop3(View view) {
+    public void toDialogServices(View view) {
+        final AlertDialog dialogBuilder = new AlertDialog.Builder(this).create();
+        LayoutInflater inflater = this.getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_services, null);
 
+        Button cancel = dialogView.findViewById(R.id.buttonCancel);
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialogBuilder.dismiss();
+            }
+        });
     }
 }
