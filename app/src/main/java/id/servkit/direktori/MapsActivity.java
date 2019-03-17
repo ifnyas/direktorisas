@@ -32,14 +32,14 @@ public class MapsActivity extends AppCompatActivity {
         final AlertDialog dialogBuilder = new AlertDialog.Builder(this).create();
         LayoutInflater inflater = this.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_services, null);
-
         Button cancel = dialogView.findViewById(R.id.buttonCancel);
-
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialogBuilder.dismiss();
             }
         });
+        dialogBuilder.setView(dialogView);
+        dialogBuilder.show();
     }
 }

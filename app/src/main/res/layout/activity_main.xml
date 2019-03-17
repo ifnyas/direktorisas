@@ -15,7 +15,7 @@
         android:id="@+id/top1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -192,14 +192,8 @@
                     android:id="@+id/sis"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/colorAccent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="IKLAN"
-                    android:textColor="#FFFFFF" />
+                    android:background="@drawable/iklan"
+                    android:scaleType="centerCrop" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
@@ -279,7 +273,8 @@
                             android:layout_width="80dp"
                             android:layout_height="match_parent"
                             android:layout_margin="8dp"
-                            android:background="@color/colorAccent" />
+                            android:background="@drawable/promo"
+                            android:scaleType="centerInside" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -332,7 +327,8 @@
                             android:layout_width="80dp"
                             android:layout_height="match_parent"
                             android:layout_margin="8dp"
-                            android:background="@color/colorAccent" />
+                            android:background="@drawable/promo"
+                            android:scaleType="centerInside" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -385,7 +381,8 @@
                             android:layout_width="80dp"
                             android:layout_height="match_parent"
                             android:layout_margin="8dp"
-                            android:background="@color/colorAccent" />
+                            android:background="@drawable/promo"
+                            android:scaleType="centerInside" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -438,9 +435,12 @@
                             android:layout_width="80dp"
                             android:layout_height="match_parent"
                             android:layout_margin="8dp"
-                            android:background="@color/colorAccent" />
+                            android:background="@drawable/promo"
+                            android:scaleType="centerInside" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
+
+
             </LinearLayout>
 
             <Button
