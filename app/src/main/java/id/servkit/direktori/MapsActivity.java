@@ -6,7 +6,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MapsActivity extends AppCompatActivity {
 
@@ -32,7 +32,7 @@ public class MapsActivity extends AppCompatActivity {
         final AlertDialog dialogBuilder = new AlertDialog.Builder(this).create();
         LayoutInflater inflater = this.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_services, null);
-        Button cancel = dialogView.findViewById(R.id.buttonCancel);
+        ImageButton cancel = dialogView.findViewById(R.id.buttonCancel);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

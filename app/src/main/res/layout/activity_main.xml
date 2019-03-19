@@ -19,22 +19,13 @@
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.v7.widget.AppCompatImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:hapticFeedbackEnabled="true"
-            android:onClick="toMapsActivity"
-            android:padding="16dp"
-            android:src="@drawable/ic_map_black_24dp"
-            android:tint="@color/colorLight" />
-
         <!--implementation 'com.android.support:design:28.0.0'-->
         <android.support.design.widget.TextInputLayout
             style="@style/LightTextInputLayoutStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="16dp"
             android:hint="Cari"
             android:textColorHint="@color/colorLight">
 
@@ -51,9 +42,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
+            android:padding="16dp"
             android:src="@drawable/ic_account_circle_black_24dp"
             android:tint="@color/colorLight" />
 
@@ -65,116 +54,12 @@
             android:tint="@color/colorLight" />
     </LinearLayout>
 
-        <HorizontalScrollView
-            android:id="@+id/top2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@id/top1">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_aksesoris"
-                    android:tint="#f44336" />
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_cuci_dan_salon_mobil"
-                    android:tint="#9C27B0" />
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_derek"
-                    android:tint="#3F51B5" />
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_kaki_mobil"
-                    android:tint="#03A9F4" />
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_mesin"
-                    android:tint="#009688" />
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_pom_bensin"
-                    android:tint="#8BC34A" />
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_rental"
-                    android:tint="#FFEB3B" />
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_spare"
-                    android:tint="#FF9800" />
-
-                <android.support.v7.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00FFFFFF"
-                    android:hapticFeedbackEnabled="true"
-                    android:onClick="toMapsActivity"
-                    android:padding="16dp"
-                    android:src="@drawable/ic_tambal_ban"
-                    android:tint="#00BCD4" />
-            </LinearLayout>
-        </HorizontalScrollView>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="16dp"
+        android:layout_margin="16dp"
+        android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/top2">
 
@@ -182,6 +67,196 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@id/top1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_map_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#FFFFFF"
+                        android:maxLines="2"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Dekat\nSaya"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_aksesoris"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#f44336"
+                        android:maxLines="1"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Aksesoris"
+                        android:textColor="#f44336" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_cuci_dan_salon_mobil"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#9C27B0"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:maxLines="2"
+                        android:text="Cuci\nKendaraan"
+                        android:textColor="#9C27B0" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_cuci_dan_salon_mobil"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#9C27B0"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:maxLines="2"
+                        android:text="Salon\nMobil"
+                        android:textColor="#9C27B0" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_derek"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#3F51B5"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Derek"
+                        android:maxLines="1"
+                        android:textColor="#3F51B5" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_kaki_mobil"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#03A9F4"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Kaki\nMobil"
+                        android:maxLines="2"
+                        android:textColor="#03A9F4" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_mesin"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#009688"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Mesin"
+                        android:maxLines="1"
+                        android:textColor="#009688" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_pom_bensin"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#8BC34A"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Pom\nBensin"
+                        android:maxLines="2"
+                        android:textColor="#8BC34A" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_rental"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#FFEB3B"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Rental"
+                        android:maxLines="1"
+                        android:textColor="#FFEB3B" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_spare"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#FF9800"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Spare"
+                        android:maxLines="1"
+                        android:textColor="#FF9800" />
+
+                    <Button
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:drawableTop="@drawable/ic_tambal_ban"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="#00BCD4"
+                        android:hapticFeedbackEnabled="true"
+                        android:onClick="toMapsActivity"
+                        android:padding="16dp"
+                        android:text="Tambal\nBan"
+                        android:maxLines="2"
+                        android:textColor="#00BCD4" />
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
